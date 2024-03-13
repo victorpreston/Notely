@@ -7,6 +7,7 @@ import {
     LogoutLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
+import { UserNav } from "./UserNav";
 
 
 export async function Navbar() {
@@ -16,16 +17,14 @@ export async function Navbar() {
             <div className="container flex items-centre justify-between">
                 <Link href="/">
                     <h1 className="font-bold text-3xl">
-                        Notely
+                        Notel<span className="text-primary">y</span>
                     </h1>
                 </Link>
             </div>
             <div className="flex items-center gap-x-5">
                 <ThemeToggle />
                 {(await isAuthenticated()) ? (
-                    <LogoutLink>
-                        <Button className="mr-3" >Log Out</Button>
-                    </LogoutLink>
+                    <UserNav />
                 ) : (
                     <div className="flex items-center gap-x-5">
                     <LoginLink>
