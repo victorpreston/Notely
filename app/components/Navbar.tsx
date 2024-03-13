@@ -2,42 +2,47 @@ import Link from "next/link";
 import { ThemeToggle } from "./Themetoggle";
 import { Button } from "@/components/ui/button";
 import {
-    RegisterLink,
-    LoginLink,
-    LogoutLink,
+  RegisterLink,
+  LoginLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
-import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { UserNav } from "./UserNav";
 
-
 export async function Navbar() {
-    const { isAuthenticated } = getKindeServerSession();
-    return (
-        <nav className="border-b bg-background h-[10vh] flex items-center">
-            <div className="container flex items-centre justify-between">
-                <Link href="/">
-                    <h1 className="font-bold text-3xl">
-                        Notel<span className="text-primary">y</span>
-                    </h1>
-                </Link>
-            </div>
-            <div className="flex items-center gap-x-5">
-                <ThemeToggle />
-                {(await isAuthenticated()) ? (
-                    <UserNav />
-                ) : (
-                    <div className="flex items-center gap-x-5">
-                    <LoginLink>
-                    <Button> SignIn</Button>
-                    </LoginLink>
-                    
-                    <RegisterLink>
-                    <Button className="mr-3" variant="secondary"> SignUp</Button>
-                    </RegisterLink>
-                </div>
-                )}  
-            </div>
+  const { isAuthenticated, getUser } = getKindeServerSession();
+  const user = await getUser();
 
-        </nav>
-    )
+  return (
+    <nav className="border-b bg-background h-[10vh] flex items-center">
+      <div className="container flex items-center justify-between">
+        <Link href="/">
+          <h1 className="font-bold text-3xl">
+            Notel<span className="text-primary">y</span>
+          </h1>
+        </Link>
+
+        <div className="flex items-center gap-x-5">
+          <ThemeToggle />
+
+          {(await isAuthenticated()) ? (
+            <UserNav
+              email={user?.email as string}
+              image={user?.picture as string}
+              name={user?.given_name as string}
+            />
+          ) : (
+            <div className="flex items-center gap-x-5">
+              <LoginLink>
+                <Button>Sign In</Button>
+              </LoginLink>
+
+              <RegisterLink>
+                <Button variant="secondary">Sign Up</Button>
+              </RegisterLink>
+            </div>
+          )}
+        </div>
+      </div>
+    </nav>
+  );
 }
