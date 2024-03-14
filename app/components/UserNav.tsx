@@ -17,7 +17,7 @@ import Link from "next/link";
 export const navItems = [
   { name: "Home", href: "/dashboard", icon: Home },
   { name: "Settings", href: "/dashboard/settings", icon: Settings },
-  { name: "Billing", href: "/dashboard/billing", icon: CreditCard },
+  { name: "Bookmarks", href: "/dashboard/bookmarks", icon: CreditCard },
 ];
 
 export function UserNav({
@@ -35,7 +35,7 @@ export function UserNav({
         <Button variant="ghost" className="relative h-10 w-10 rounded-full m-4">
           <Avatar className="h-10 w-10 rounded-full">
             <AvatarImage src={image} alt="" />
-            <AvatarFallback>Jan</AvatarFallback>
+            <AvatarFallback>NY</AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
