@@ -4,8 +4,16 @@ import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { redirect } from "next/navigation";
 
-export default function Home() {
+
+export default async function Home() {
+  const { isAuthenticated } = getKindeServerSession();
+
+  if (await isAuthenticated()) {
+    return redirect("/dashboard");
+  }
   return (
     <section className="flex items-center justify-center bg-background h-[90vh]">
       <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
