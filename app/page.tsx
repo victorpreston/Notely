@@ -21,16 +21,15 @@ export default async function Home() {
           <div>
             <span className="w-auto px-6 py-3 rounded-full bg-secondary">
               <span className="text-sm font-medium text-primary">
-                Sort your notes by category, date, or title.
+                Sort your notes by category, date or title.
               </span>
             </span>
-            <h1 className="mt-8 text-4xl font-extrabold tracking-tight lg:text-6xl">
+            <h1 className="mt-8 text-4xl  lg:text-6xl text-balance bg-gradient-to-br  from-gray-900 via-gray-800 to-gray-400 bg-clip-text text-center font-heading text-[40px] font-bold leading-tight tracking-[-0.02em] text-transparent  drop-shadow-sm duration-300 ease-linear [word-spacing:theme(spacing.1)] md:text-7xl md:leading-[5rem] dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900">
               Create Your Notes 
             </h1>
             <p className="mx-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed ut purus neque. Phasellus sit amet ante ut velit aliquet tincidunt. 
-            Donec feugiat eros vel nisi sagittis
+            With Notely, you can easily create, save, edit and delete notes at your convenience.
+            Our platform offers a user friendly interface that makes note management a breeze.
             </p>
           </div>
           <div className="flex justify-center max-w-sm mx-auto mt-10 space-x-4">
@@ -50,7 +49,7 @@ export default async function Home() {
                 className="w-full"
               >
                 <FaGithub className="mr-2" />
-                Star
+                Star 
               </Button>
             </Link>
           </div>
