@@ -39,12 +39,20 @@ export default async function Home() {
                 Get Started
               </Button>
             </RegisterLink>
-          <Link href="https://github.com/victorpreston/Notely" passHref>
-            <Button size="lg" className="w-full flex items-center justify-center">
-              <FaGithub className="mr-2" />
-              Star
-            </Button>
-          </Link>
+            <Link 
+              href="https://github.com/victorpreston/Notely" 
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button 
+                size="lg" 
+                className="w-full"
+              >
+                <FaGithub className="mr-2" />
+                Star
+              </Button>
+            </Link>
           </div>
         </div>
           
