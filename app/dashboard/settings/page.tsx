@@ -115,13 +115,38 @@ import { SubmitButton } from "@/app/components/SubmitButtons";
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel>Color</SelectLabel>
-                        <SelectItem value="theme-green">Green</SelectItem>
-                        <SelectItem value="theme-blue">Blue</SelectItem>
-                        <SelectItem value="theme-violet">Violet</SelectItem>
-                        <SelectItem value="theme-yellow">Yellow</SelectItem>
-                        <SelectItem value="theme-orange">Orange</SelectItem>
-                        <SelectItem value="theme-red">Red</SelectItem>
-                        <SelectItem value="theme-rose">Rose</SelectItem>
+                        <SelectItem value="theme-green">
+                          <span className="inline-block h-4 w-4 rounded-full bg-green-500 mr-2"></span>
+                          Green
+                        </SelectItem>
+                        <SelectItem value="theme-blue">
+                          <span className="inline-block h-4 w-4 rounded-full bg-blue-500 mr-2"></span>
+                          Blue
+                        </SelectItem>
+                        <SelectItem value="theme-violet">
+                          <span className="inline-block h-4 w-4 rounded-full bg-purple-500 mr-2"></span>
+                          Violet
+                        </SelectItem>
+                        <SelectItem value="theme-yellow">
+                          <span className="inline-block h-4 w-4 rounded-full bg-yellow-500 mr-2"></span>
+                          Yellow
+                        </SelectItem>
+                        <SelectItem value="theme-orange">
+                          <span className="inline-block h-4 w-4 rounded-full bg-orange-500 mr-2"></span>
+                          Orange
+                        </SelectItem>
+                        <SelectItem value="theme-red">
+                          <span className="inline-block h-4 w-4 rounded-full bg-red-500 mr-2"></span>
+                          Red
+                        </SelectItem>
+                        <SelectItem value="theme-rose">
+                          <span className="inline-block h-4 w-4 rounded-full bg-pink-500 mr-2"></span>
+                          Rose
+                        </SelectItem>
+                        <SelectItem value="theme-gray">
+                          <span className="inline-block h-4 w-4 rounded-full bg-gray-500 mr-2"></span>
+                          Default
+                        </SelectItem>
                       </SelectGroup>
                     </SelectContent>
                   </Select>

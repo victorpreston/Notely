@@ -14,13 +14,15 @@ export async function Navbar() {
   const user = await getUser();
 
   return (
-    <nav className="border-b bg-background h-[10vh] flex items-center">
+    <nav className="border-b bg-background h-[10vh] flex items-center flex-wrap: wrap sticky top-0 z-50">
       <div className="container flex items-center justify-between">
         <Link href="/">
-          <h1 className="font-bold text-3xl flex items-center">
+          <h2 className="font-bold text-3xl flex items-center">
+          <span className="text-primary">
           <NotebookPen size={28} className="mr-2" />
+          </span>
             Notel<span className="text-primary">y</span>
-          </h1>
+          </h2>
         </Link>
 
         <div className="flex items-center gap-x-5 ml-4">
@@ -35,11 +37,11 @@ export async function Navbar() {
           ) : (
             <div className="flex items-center gap-x-5">
               <LoginLink>
-                <Button>Sign In</Button>
+                <Button>SignIn</Button>
               </LoginLink>
 
               <RegisterLink>
-                <Button variant="secondary">Sign Up</Button>
+                <Button variant="secondary">SignUp</Button>
               </RegisterLink>
             </div>
           )}
