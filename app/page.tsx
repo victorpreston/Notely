@@ -52,6 +52,7 @@ export default async function Home() {
               rel="noreferrer"
             >
               <Button
+                variant="secondary"
                 size="lg"
                 className="w-full"
               >

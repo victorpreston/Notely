@@ -25,7 +25,7 @@ export async function Navbar() {
           </h2>
         </Link>
 
-        <div className="flex items-center gap-x-5 ml-4">
+        <div className="flex items-center gap-x-2">
           <ThemeToggle />
 
           {(await isAuthenticated()) ? (
@@ -35,7 +35,7 @@ export async function Navbar() {
               name={user?.given_name as string}
             />
           ) : (
-            <div className="flex items-center gap-x-5">
+            <div className="flex items-center gap-x-2">
               <LoginLink>
                 <Button>SignIn</Button>
               </LoginLink>
