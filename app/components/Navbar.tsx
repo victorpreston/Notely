@@ -7,6 +7,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { UserNav } from "./UserNav";
+import { NotebookPen } from "lucide-react";
 
 export async function Navbar() {
   const { isAuthenticated, getUser } = getKindeServerSession();
@@ -16,12 +17,13 @@ export async function Navbar() {
     <nav className="border-b bg-background h-[10vh] flex items-center">
       <div className="container flex items-center justify-between">
         <Link href="/">
-          <h1 className="font-bold text-3xl">
+          <h1 className="font-bold text-3xl flex items-center">
+          <NotebookPen size={28} className="mr-2" />
             Notel<span className="text-primary">y</span>
           </h1>
         </Link>
 
-        <div className="flex items-center gap-x-5">
+        <div className="flex items-center gap-x-5 ml-4">
           <ThemeToggle />
 
           {(await isAuthenticated()) ? (

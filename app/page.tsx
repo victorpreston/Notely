@@ -22,15 +22,16 @@ export default async function Home() {
           <div>
             <span className="w-auto px-6 py-3 rounded-full bg-secondary">
               <span className="text-sm font-medium text-primary">
-                Sort your notes by category, date or title.
+                Introducing Notely, a modern note taking app
               </span>
             </span>
             <h1 className="mt-8 text-4xl  lg:text-6xl text-balance bg-gradient-to-br  from-gray-900 via-gray-800 to-gray-400 bg-clip-text text-center font-heading text-[40px] font-bold leading-tight tracking-[-0.02em] text-transparent  drop-shadow-sm duration-300 ease-linear [word-spacing:theme(spacing.1)] md:text-7xl md:leading-[5rem] dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900">
               Create Your Notes
             </h1>
             <p className="mx-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground ">
-              With Notely, you can easily create, save, edit and delete notes at your convenience.
+              With Notely, you can sort your notes by category, date or title.
               Our platform offers a user friendly interface that makes note management a breeze.
+              Create and manage your notes with ease.
             </p>
           </div>
           <div className="flex justify-center max-w-sm mx-auto mt-10 space-x-4">
