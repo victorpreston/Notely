@@ -7,10 +7,9 @@ export default function Features() {
                 <h2 className="mt-8 text-4xl  lg:text-6xl text-balance bg-gradient-to-br  from-gray-900 via-gray-800 to-gray-400 bg-clip-text text-center font-heading text-[40px] font-bold leading-tight tracking-[-0.02em] text-transparent  drop-shadow-sm duration-300 ease-linear [word-spacing:theme(spacing.1)] md:text-7xl md:leading-[5rem] dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-900">
                     Features
                 </h2>
-                <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                    This project is an experiment to see how a modern app, with features
-                    like auth, subscriptions, API routes, and static pages would work in
-                    Next.js 14 app dir.
+                <p className="max-w-[85%] leading-normal sm:text-lg sm:leading-7">
+                Notely is a modern, feature-rich application designed to streamline your note-taking process. 
+                Built with Next.js 14, SuperBase, KindeAuth Prisma ORM & Shadcdn UI.
                 </p>
             </div>
             <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
@@ -24,7 +23,8 @@ export default function Features() {
                         <div className="space-y-2">
                             <h3 className="font-bold">Authentication</h3>
                             <p className="text-sm text-muted-foreground">
-                                App dir, Routing, Layouts, Loading UI and API routes.
+                                Notely allows you to have your notes secured.
+                                This means that only you can access your notes.
                             </p>
                         </div>
                     </div>
@@ -36,7 +36,8 @@ export default function Features() {
                         <div className="space-y-2">
                             <h3 className="font-bold">Dashboard</h3>
                             <p className="text-sm text-muted-foreground">
-                                Server and Client Components. Use hook.
+                                You can manage your notes from our dashboard.
+                                This makes it easy to keep track of your notes.
                             </p>
                         </div>
                     </div>
@@ -49,7 +50,8 @@ export default function Features() {
                         <div className="space-y-2">
                             <h3 className="font-bold">Settings</h3>
                             <p className="text-sm text-muted-foreground">
-                                Postgres basic support added. Use node pg.
+                                Notely allows you to customize your settings.
+                                You can try out different settings to see what works best for you.
                             </p>
                         </div>
                     </div>
@@ -62,8 +64,8 @@ export default function Features() {
                         <div className="space-y-2">
                             <h3 className="font-bold">Bookmarks</h3>
                             <p className="text-sm text-muted-foreground">
-                                UI components built using Radix UI and styled with Tailwind
-                                CSS.
+                                Notely allows you to bookmark your notes.
+                                This makes it easy to access your favorite notes.
                             </p>
                         </div>
                     </div>
@@ -76,7 +78,8 @@ export default function Features() {
                         <div className="space-y-2">
                             <h3 className="font-bold">Sorting</h3>
                             <p className="text-sm text-muted-foreground">
-                                Authentication using NextAuth.js and middlewares.
+                                Notely allows you to sort your notes by category, date or title.
+                                This means you can easily to find your notes.
                             </p>
                         </div>
                     </div>
@@ -91,7 +94,8 @@ export default function Features() {
                         <div className="space-y-2">
                             <h3 className="font-bold">Management</h3>
                             <p className="text-sm text-muted-foreground">
-                                Free and paid subscriptions using Stripe. (To be added.)
+                                Notely allows you to easily create, save, edit and delete notes at your convenience.
+                                Our makes note management a breeze.
                             </p>
                         </div>
                     </div>
