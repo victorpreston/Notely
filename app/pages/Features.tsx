@@ -9,7 +9,7 @@ export default function Features() {
                 </h2>
                 <p className="max-w-[85%] leading-normal sm:text-lg sm:leading-7">
                 Notely is a modern, feature-rich application designed to streamline your note-taking process. 
-                Built with Next.js 14, SuperBase, KindeAuth Prisma ORM & Shadcdn UI.
+                Built with Next.js 14, SuperBase, KindeAuth, Prisma ORM & Shadcdn UI.
                 </p>
             </div>
             <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
