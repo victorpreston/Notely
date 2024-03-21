@@ -4,7 +4,7 @@ import { Edit, File } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 
-export default async function DashboardPage() {
+export default async function BooKMarks() {
     return (
       <div className="grid items-start gap-y-8">
         <div className="flex items-center justify-between px-2">
@@ -16,7 +16,7 @@ export default async function DashboardPage() {
           </div>
   
           <Button asChild>
-            <Link href="/dashboard/new">BookMark Notes</Link>
+            <Link href="/dashboard">BookMark Notes</Link>
           </Button>
         </div>
           <div className="flex min-h-[400px] flex-col items-center justify-center rounded-md border border-dashed p-8 text-center animate-in fade-in-50">
@@ -33,7 +33,7 @@ export default async function DashboardPage() {
             </p>
   
             <Button asChild>
-              <Link href="/dashboard/new">Create BookMarks</Link>
+              <Link href="/dashboard">Create BookMarks</Link>
             </Button>
           </div>
         </div>
