@@ -23,7 +23,7 @@ export default async function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <div>
               <Link 
-              href="https://twitter.com/_victorpreston/status/1768951974114800055"
+              href="https://twitter.com/_victorpreston/status/1770847864593265034"
               target="_blank"
               passHref
               >
