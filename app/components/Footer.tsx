@@ -27,14 +27,6 @@ export default function Footer() {
           </p>
         </div>
         <div className=" flex space-x-5">
-            <Link
-                href="https://github.com/victorpreston/Notely"
-                passHref
-                target="_blank"
-                rel="noreferrer"
-            >
-                <FaTwitter className="mr-2 bg-transparent" size={40}/>
-            </Link>
           <ThemeToggle />
         </div>
       </div>
