@@ -56,7 +56,6 @@ Create a `.env` file in the root directory with the following content:
     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
     KINDER_CLIENT_ID=your_kinde_client_id
     KINDER_CLIENT_SECRET=your_kinde_client_secret
-    Replace your_supabase_url, your_supabase_anon_key, your_kinde_client_id, and your_kinde_client_secret with your actual credentials.
 
 Run the Development Server:
 
